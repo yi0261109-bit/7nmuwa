@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>사다리 게임 - 배달 메뉴 추천</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>� 사다리 게임 - 오늘 배달 뭐 시킬까?</h1>
+        <p class="subtitle">혼자 배달 시킬 때 메뉴 고민하는 사람을 위한 사다리 게임</p>
+        
+        <div class="game-section">
+            <button id="start-game" class="start-btn">🎮 사다리 게임 시작</button>
+            <button id="edit-menus" class="edit-btn">✏️ 메뉴 수정</button>
+        </div>
+        
+        <div id="edit-section" class="edit-section">
+            <h2>메뉴 수정하기</h2>
+            <div id="edit-menu-list" class="edit-menu-list"></div>
+            <div class="add-menu-row">
+                <input type="text" id="new-menu-input" placeholder="새 메뉴 이름 입력">
+                <button id="add-new-menu">추가</button>
+            </div>
+            <button id="save-menus" class="save-btn">저장</button>
+        </div>
+        
+        <div id="game-area" class="game-area">
+            <div id="start-selection" class="start-selection">
+                <h2>번호를 선택하세요</h2>
+                <div id="menu-buttons" class="menu-buttons"></div>
+            </div>
+            <canvas id="ladder-canvas"></canvas>
+            <div id="game-result" class="game-result"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
